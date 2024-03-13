@@ -1,8 +1,20 @@
 body {
-    background-color: lightblue;
+    background-color: blanchedalmond;
   }
   
   h1 {
     color: navy;
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  h2 {
+    color: navy;
+    margin-left: 20px;
+    align-self: center;
+  }
+
+  p {
+    color: black;
     margin-left: 20px;
   }

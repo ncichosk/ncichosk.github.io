@@ -15,7 +15,7 @@ class GlobalHeader extends HTMLElement {
                 <img src="/assets/images/linkedin_logo.png" alt="LinkedIn">
               </a>
               <a href="https://www.instagram.com/nickcichoski/">
-                <img src="/assets/images/instagram-logo.png" alt="Instagram">
+                <img src="/assets/images/instagram_logo.png" alt="Instagram">
               </a>
             </div>
           </nav>

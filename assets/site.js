@@ -12,7 +12,7 @@ class GlobalHeader extends HTMLElement {
             </div>
             <div class="links">
               <a href="https://www.linkedin.com/in/nick-cichoski-620717239/">
-                <img src="/assets/images/linkedin-logo.png" alt="LinkedIn">
+                <img src="/assets/images/linkedin_logo.png" alt="LinkedIn">
               </a>
               <a href="https://www.instagram.com/nickcichoski/">
                 <img src="/assets/images/instagram-logo.png" alt="Instagram">

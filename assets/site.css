@@ -140,16 +140,16 @@ nav a:hover { color: var(--sky); }
 }
 
 /* ==========================================================================
-   Home Photos
+   Home Photo
    ========================================================================== */
 /* Homepage banner photo section */
 .homepage-photo {
   position: relative;
   display: flex;
   align-items: center;
-  min-height: clamp(320px, 55vh, 540px);
+  min-height: clamp(20rem, 55vh, 33.75rem);
   padding: var(--gutter);
-  background-image: url("Images/mc_6.30.20_rainbow_pano.png");
+  background-image: url("/assets/Images/mc_6.30.20_rainbow_pano.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,13 +179,18 @@ nav a:hover { color: var(--sky); }
   text-align: center;
 }
 
-
 /* ==========================================================================
-   About Photos
+   Photos
    ========================================================================== */
-/* Headshot photo section */
-
-
+/* About page photo section */
+.headshot {
+  float: left;
+  width: clamp(10rem, 30vw, 22rem);
+  height: clamp(14rem, 50vh, 32rem);
+  object-fit: cover;
+  object-position: center;
+  margin: 0 1rem 1rem 0;
+}
 
 /* ==========================================================================
    Content

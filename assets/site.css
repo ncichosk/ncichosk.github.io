@@ -87,7 +87,20 @@ header {
   top: 0;
   z-index: 100;
   min-height: var(--header-h);
-  background: rgba(66, 66, 66, 0.5); /* paper color with 92% opacity */
+  background: rgba(66, 66, 66, 0.5); 
+}
+
+global-header {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: var(--header-h);
+}
+
+header {
+  min-height: var(--header-h);
+  background: var(--header-grey);
 }
 
 .banner {
@@ -113,11 +126,10 @@ nav {
   margin: 0;
 }
 
-nav a {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 0.95rem;
-  color: var(--ink);
+nav a[aria-current="page"] {
+  color: var(--sky);
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
 }
 
 nav a:hover { color: var(--sky); }
@@ -139,6 +151,20 @@ nav a:hover { color: var(--sky); }
   opacity: 0.5; 
 }
 
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: var(--gutter);
+  top: 0.5rem;
+  z-index: 200;
+  padding: 0.5rem 1rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+
 /* ==========================================================================
    Home Photo
    ========================================================================== */
@@ -149,7 +175,7 @@ nav a:hover { color: var(--sky); }
   align-items: center;
   min-height: clamp(20rem, 55vh, 33.75rem);
   padding: var(--gutter);
-  background-image: url("/assets/Images/mc_6.30.20_rainbow_pano.png");
+  background-image: url("/assets/images/mc_6.30.20_rainbow_pano.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
